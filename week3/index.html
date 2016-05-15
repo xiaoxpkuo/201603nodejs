@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="xpMod">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<!--指令系统-->
+    <div ng-controller="xpCtrl">
+        {{name+1}}
+    </div>
+</body>
+<script src="../angular.min.js"></script>
+<script>
+    angular.module('xpMod',[]);
+    angular.module('xpMod').controller('xpCtrl',function ($scope) {
+        $scope.name='xp';
+    });
+</script>
+</html>
